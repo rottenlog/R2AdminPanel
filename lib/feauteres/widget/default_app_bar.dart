@@ -11,7 +11,16 @@ class DefaulAppBar extends StatelessWidget implements PreferredSizeWidget
   Widget build(BuildContext context)
   {
     return AppBar(
+      automaticallyImplyLeading: false,
       actions: <Widget>[
+        Expanded(
+          child: IconButton(
+            icon: const Icon(Icons.home, size: 40,),
+            onPressed: () {
+              Navigator.pushNamed(context, '/');
+            },
+          ),
+        ),
         Expanded(
           child: IconButton(
             icon: const FaIcon(FontAwesomeIcons.user, size: 40,),
@@ -37,7 +46,7 @@ class DefaulAppBar extends StatelessWidget implements PreferredSizeWidget
           ),
         ),
         Visibility(
-          visible: MediaQuery.of(context).size.width > 800,
+          visible: MediaQuery.of(context).size.width > 900,
           child: const Expanded(
             child: Text(
               'R2 Admin Panel',
