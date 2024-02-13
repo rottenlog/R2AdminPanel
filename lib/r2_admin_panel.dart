@@ -9,7 +9,7 @@ class R2AdminPanel extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return MaterialApp(
-      title: 'Main Screen',
+      title: 'R2 Admin Panel',
       theme: defaultTheme,
       routes: routes,
     );

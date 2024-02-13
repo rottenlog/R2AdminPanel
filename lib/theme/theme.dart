@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-final defaultTheme = ThemeData (
+final ThemeData defaultTheme = ThemeData (
   appBarTheme: const AppBarTheme(
-    backgroundColor: Colors.blueAccent,
+    backgroundColor: Colors.greenAccent,
     titleTextStyle: TextStyle(fontWeight: FontWeight.w400, fontSize: 40.0),
     elevation: 10,
-  )
+  ),
 );
