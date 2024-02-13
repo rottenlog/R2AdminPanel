@@ -3,7 +3,6 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class DefaulAppBar extends StatelessWidget implements PreferredSizeWidget
 {
-
   const DefaulAppBar(BuildContext context, {Key? key}) : super(key: key);
   @override
   Size get preferredSize => const Size.fromHeight(kToolbarHeight);
