@@ -12,10 +12,14 @@ class DefaulAppBar extends StatelessWidget implements PreferredSizeWidget
     return AppBar(
       automaticallyImplyLeading: false,
       actions: <Widget>[
+        const DefaultTextButton('/', FontAwesomeIcons.houseCrack, 'home'),
         const DefaultTextButton('/accounts', FontAwesomeIcons.user, 'accounts'),
         const DefaultTextButton('/parameters', FontAwesomeIcons.phabricator, 'parameters'),
+        const DefaultTextButton('/game', FontAwesomeIcons.gamepad, 'games'),
+        const DefaultTextButton('/log', FontAwesomeIcons.bookJournalWhills, 'logs'),
+        const DefaultTextButton('/billing', FontAwesomeIcons.moneyBill, 'billings'),
         Visibility(
-          visible: MediaQuery.of(context).size.width > 900,
+          visible: MediaQuery.of(context).size.width > 1400,
           child: const Expanded(
             child: Text(
               'R2 Admin Panel',
