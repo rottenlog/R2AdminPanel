@@ -13,7 +13,7 @@ class AppBarTextStyles {
 
 class AppBarIconStyle {
   static FaIcon iconButton(IconData icon) {
-    return FaIcon(icon, size: 40, color: Colors.black,
+    return FaIcon(icon, size: 30, color: Colors.black,
     );
   }
 }

@@ -15,11 +15,11 @@ class DefaultTextButton extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            AppBarIconStyle.iconButton(yourIcon),
             Text(
-              'Account',
+              '  Account',
               style: AppBarTextStyles.accountButton(),
             ),
-            AppBarIconStyle.iconButton(yourIcon),
           ],
         ),
       ),
