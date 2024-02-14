@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../widget/widget.dart';
+import 'body_settings_screen.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key}); 
@@ -7,7 +8,7 @@ class SettingsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: DefaulAppBar(context),
-      body: const Text('Setting_Screen'),
+      body: const AdminPanelScreen(),
     );
   }
 }
