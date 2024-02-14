@@ -3,7 +3,8 @@ import 'default_imports.dart';
 class DefaultTextButton extends StatelessWidget {
   final String path;
   final IconData yourIcon;
-  const DefaultTextButton(this.path, this.yourIcon, {super.key});
+  final String name;
+  const DefaultTextButton(this.path, this.yourIcon, this.name, {super.key});
   @override
   Widget build(BuildContext context) {
     return Expanded(
@@ -17,7 +18,7 @@ class DefaultTextButton extends StatelessWidget {
           children: [
             AppBarIconStyle.iconButton(yourIcon),
             Text(
-              '  Account',
+              '  $name',
               style: AppBarTextStyles.accountButton(),
             ),
           ],

@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
-class AdminPanelScreen extends StatelessWidget {
-  const AdminPanelScreen({super.key});
-
+class AccountsPanelScreen extends StatelessWidget {
+  const AccountsPanelScreen({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,7 +38,7 @@ class AdminPanelScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Информация о выбранном пункте:',
+                    'Вывод accounts',
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,

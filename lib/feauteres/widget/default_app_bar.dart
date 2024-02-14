@@ -12,7 +12,8 @@ class DefaulAppBar extends StatelessWidget implements PreferredSizeWidget
     return AppBar(
       automaticallyImplyLeading: false,
       actions: <Widget>[
-        const DefaultTextButton('/user', FontAwesomeIcons.user),
+        const DefaultTextButton('/accounts', FontAwesomeIcons.user, 'accounts'),
+        const DefaultTextButton('/parameters', FontAwesomeIcons.phabricator, 'parameters'),
         Visibility(
           visible: MediaQuery.of(context).size.width > 900,
           child: const Expanded(
