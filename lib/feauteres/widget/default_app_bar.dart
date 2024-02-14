@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'default_imports.dart';
 
 class DefaulAppBar extends StatelessWidget implements PreferredSizeWidget
 {
@@ -13,38 +12,7 @@ class DefaulAppBar extends StatelessWidget implements PreferredSizeWidget
     return AppBar(
       automaticallyImplyLeading: false,
       actions: <Widget>[
-        Expanded(
-          child: IconButton(
-            icon: const Icon(Icons.home, size: 40,),
-            onPressed: () {
-              Navigator.pushNamed(context, '/');
-            },
-          ),
-        ),
-        Expanded(
-          child: IconButton(
-            icon: const FaIcon(FontAwesomeIcons.user, size: 40,),
-            onPressed: () {
-              Navigator.pushNamed(context, '/users');
-            },
-          ),
-        ),
-        Expanded(
-          child: IconButton(
-            icon: const Icon(Icons.card_giftcard, size: 40,),
-            onPressed: () {
-              Navigator.pushNamed(context, '/gift');
-            },
-          ),
-        ),
-        Expanded(
-          child: IconButton(
-            icon: const Icon(Icons.settings, size: 40,),
-            onPressed: () {
-              Navigator.pushNamed(context, '/settings');
-            },
-          ),
-        ),
+        const DefaultTextButton('/user', FontAwesomeIcons.user),
         Visibility(
           visible: MediaQuery.of(context).size.width > 900,
           child: const Expanded(
